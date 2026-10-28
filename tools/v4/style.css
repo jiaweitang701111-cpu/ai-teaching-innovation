@@ -1,0 +1,42 @@
+/* ── 2026-10-29 第三輪調整（tools/v4） ── */
+/* 第 4 頁：重點詞上色（橘＝AI 產出的成果，綠＝AI 用到的能力） */
+.s[data-src="11"] .r10.k-hl{color:#C2610F;font-weight:700}
+.s[data-src="11"] .r10.k-hl2{color:#2E7D4F;font-weight:700}
+/* 第 5 頁：Prompt 框依內容高度，下方說明卡放大 */
+#ex-scene .pb-right .promptbox{flex:none}
+#ex-scene .k-note2{flex:1;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:22px 28px;font-size:22px;line-height:36px;color:var(--ink)}
+#ex-scene .k-note2 b{font-size:24px;line-height:36px}
+#ex-scene .k-tasks{gap:6px}
+/* 第 22 頁：結構化 Prompt 卡片字放大 */
+.k-fit24 .cx-why h3{font-size:28px}
+.k-fit24 .cx-why p{font-size:23.5px;line-height:36px}
+.k-fit24 .cx-why .key{font-size:25px}
+.k-fit24 .cx-flow .cx-card{padding:18px 14px;gap:10px}
+.k-fit24 .cx-flow h3{font-size:23.5px;line-height:34px}
+.k-fit24 .cx-flow p{font-size:27.5px;line-height:43px}
+.k-fit24 .cx-flow .goal{font-size:21px;line-height:33px;padding:12px 10px}
+/* 第 30 頁：社群媒體文案 */
+.s[data-src="302"] .k-body{gap:22px!important}
+.s[data-src="302"] .k-prompt{padding:24px 32px}
+.s[data-src="302"] .k-prompt .main{font-size:29px;line-height:46px}
+.s[data-src="302"] .k-prompt .rest{font-size:27px;line-height:44px}
+.s[data-src="302"] .k-explain{padding:20px 28px;font-size:26px;line-height:42px}
+/* 第 32 頁：活動企劃案 */
+.s[data-src="303"] .k-prompt{padding:32px 40px!important}
+.s[data-src="303"] .k-prompt .main{font-size:31px!important;line-height:52px!important}
+.s[data-src="303"] .k-prompt li{font-size:30px;line-height:54px;padding-left:36px}
+/* 第 34 頁：廣告文案兩步驟 */
+.s[data-src="304"] .k-steps2 > .cx-card:first-child{flex:1}
+.s[data-src="304"] .k-steps2 > .cx-card:last-child{flex:1.15}
+.s[data-src="304"] .k-steps2 h3{font-size:25px;line-height:35px}
+.s[data-src="304"] .k-steps2 .k-prompt .main{font-size:27.5px;line-height:44px}
+.s[data-src="304"] .k-steps2 .why{font-size:24px;line-height:38px}
+/* 第 35 頁：影音廣告腳本 */
+.s[data-src="305"] .k-body{gap:24px!important}
+.s[data-src="305"] .k-prompt{padding:26px 34px}
+.s[data-src="305"] .k-prompt .main{font-size:32px;line-height:52px}
+/* 第 42 頁：前三張卡片字放大 */
+.k-ncard.lg p{font-size:20.5px;line-height:32px}
+/* 避免段落最後一行只剩一兩個字（Chrome／Edge 117+） */
+.cx p,.cx li,.cx .goal,.cx h3,.k-tbl td,.k-ix .pb-note1,.s[data-src="120"] .tb p,.s[data-src="121"] .tb p,.s[data-src="122"] .tb p,.s[data-src="123"] .tb p,.s[data-src="124"] .tb p{text-wrap:pretty}
+.s[data-src="302"] .k-explain p{font-size:26px;line-height:42px}
