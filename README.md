@@ -20,13 +20,19 @@
 | 第二部份 Prompt 的法則與要素 | 16–28 |
 | 第三部份 ChatGPT 文案生成、市場調查、數據分析與 ChatGPT Work | 29–51 |
 | 第四部份 ChatGPT 生成圖片 | 52–59 |
-| 第五部份 ChatGPT Skills介紹 | 60–70 |
-| 第六部份 Claude 功能與使用全攻略 | 71–109 |
+| 第五部份 ChatGPT Skills介紹 | 60–72 |
+| 第六部份 Claude 功能與使用全攻略 | 73–109 |
 | Q&A | 110 |
 
 互動演練頁：5（應用場景）、24（結構化 Prompt）、31（社群文案）、33（活動企劃）、37–39（市場調查）、59（生圖萬能公式）、91（Claude 三模式）、108（Cowork 簡報指令）。
 
 ## 改版紀錄
+
+### 2026-10-29 第四輪（最後調整，110 頁）
+
+- 第 5 頁 Prompt 範例字放大、下方說明縮小；第 39 頁六個欄位標籤放大；第 70 頁拿掉「範本（assets/）」一行。
+- 第 73 頁比照第 60 頁的部份封面版型；第六部份拿掉「單元一～五」字樣，各單元封面（第 85、92、100、106 頁）改為置中。
+- 全面檢查修正：Claude Haiku 4.5 更新為 Haiku 5.5（第 92、94、95 頁，依 Anthropic 官方模型文件）；ChatGPT Work 驅動模型改為 GPT-6 系列（第 44 頁）；第 57 頁卡片文字超出修正；全站段落避免孤字。
 
 ### 2026-10-29 第三輪（112 → 110 頁）
 
@@ -52,6 +58,7 @@
 
 ## 重新產生
 
+- 第四輪腳本：`python tools/v5/build5.py`。輸入為 git commit `c430b9e` 的 110 頁 `index.html`；樣式在 `tools/v5/style.css`。
 - 第三輪腳本：`python tools/v4/build4.py`。輸入為 git commit `994f348` 的 112 頁 `index.html`；樣式在 `tools/v4/style.css`。
 - 第二輪腳本：`python tools/v3/build3.py`。輸入為 git commit `b7f4982` 的 120 頁 `index.html`；新頁面在 `tools/v3/slides.html`、樣式在 `tools/v3/style.css`、互動程式在 `tools/v3/script.js`。
 - 第一輪腳本：`tools/build.py`（輸入為 mktech-ai-course 的 176 頁 `index.html`）。
