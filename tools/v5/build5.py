@@ -45,10 +45,18 @@ for p in range(74, 110):
     S[p] = re.sub(r"第六部份｜單元[一二三四五](｜| )", "第六部份｜", S[p])
 
 def unit(src, title, lines, sub_, desc=""):
-    h2 = "<br>".join(lines)
-    d = f'<div class="desc">{desc}</div>' if desc else ""
-    return (f'<section class="s bn" data-src="{src}" data-t="{title}"><div class="k-unitwrap">'
-            f'<div class="ey">第六部份</div><h2>{h2}</h2><i class="bar"></i><div class="sub">{sub_}</div>{d}</div></section>')
+    """單元封面：比照第 73 頁（部份封面）的左對齊版型；標題兩行時整組上移一行"""
+    up = 73.6 * (len(lines) - 1)
+    t = lambda y: f"{y - up:.1f}"
+    h1 = "".join(f'<p class="p1"><span class="r1">{l}</span></p>' for l in lines)
+    d = (f'<div class="e tb" style="left:85.3px;top:484px;width:1142.7px;height:96px"><div class="ti">'
+         f'<p class="p2"><span class="r14">{desc}</span></p></div></div>') if desc else ""
+    return (f'<section class="s bn" data-src="{src}" data-t="{title}">'
+            f'<i class="e" style="left:85.3px;top:{t(247.7)}px;width:106.7px;height:5.3px;background:#F0A35E;border-radius:999px"></i>'
+            f'<div class="e tb" style="left:85.3px;top:{t(279.7)}px;width:1142.7px;height:34.4px;--t:1;--x:0.888"><div class="ti"><p class="p0"><span class="r0">第六部份</span></p></div></div>'
+            f'<div class="e tb" style="left:85.3px;top:{t(338)}px;width:1142.7px;height:{76.3 + up:.1f}px;--t:1;--x:0.000"><div class="ti">{h1}</div></div>'
+            f'<div class="e tb" style="left:85.3px;top:438.3px;width:1142.7px;height:40px"><div class="ti"><p class="p48"><span class="r16">{sub_}</span></p></div></div>'
+            f'{d}</section>')
 S[85] = unit("513", "Claude 三模式： Chat、Cowork、Code", ["Claude 三模式：", "Chat、Cowork、Code"],
              "一張表看懂三種使用方式與適合對象",
              "同一個 Claude 模型、三種工作方式：2023 年的 Chat、2025 年 2 月的 Claude Code、2026 年 1 月的 Cowork；2026 年 9 月起 Chat 與 Cowork 合併為同一對話入口。理解三者的分工，才能依角色與任務發揮 AI 的效益")

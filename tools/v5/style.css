@@ -10,14 +10,6 @@
 #ex-market .fld input{font-size:20px}
 #ex-market .pb-right .promptbox .out{font-size:22px;line-height:35px}
 #ex-market .pb-notes > div{font-size:18.5px;line-height:29px}
-/* 第六部份各單元封面：文字置中 */
-.k-unitwrap{position:absolute;inset:0;padding:0 150px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.k-unitwrap .ey{font-size:25px;line-height:34px;font-weight:700;letter-spacing:3px;color:#F0A35E}
-.k-unitwrap h2{margin:18px 0 0;font:700 62px/1.25 "Noto Serif TC","PMingLiU",serif;color:#F5F2EC}
-.k-unitwrap .bar{display:block;width:106px;height:5px;border-radius:999px;background:#F0A35E;margin:30px 0 24px}
-.k-unitwrap .sub{font-size:25px;line-height:37px;color:#E3E8EF;text-wrap:balance}
-.k-unitwrap .desc{margin-top:14px;max-width:920px;font-size:20px;line-height:33px;color:#C7D0DC;text-wrap:balance}
-body.mob .k-unitwrap{padding:0 60px}
 /* 全面檢查：所有段落避免末行只剩一兩字 */
 .tb p,.tbl p,.cx p,.cx li,.k-tbl td{text-wrap:pretty}
 /* 手機版：互動頁字級統一（覆蓋桌機各頁的放大設定） */
