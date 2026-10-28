@@ -20,3 +20,10 @@
 body.mob .k-unitwrap{padding:0 60px}
 /* 全面檢查：所有段落避免末行只剩一兩字 */
 .tb p,.tbl p,.cx p,.cx li,.k-tbl td{text-wrap:pretty}
+/* 手機版：互動頁字級統一（覆蓋桌機各頁的放大設定） */
+body.mob .s.ix .promptbox .out,body.mob .s.ix .promptbox .out.ext{font-size:17px!important;line-height:28px!important}
+body.mob .s.ix .promptbox .lab{font-size:14px}
+body.mob .s.ix .pb-note1,body.mob .s.ix .k-note2,body.mob .s.ix .pb-notes > div{font-size:15.5px!important;line-height:25px!important;padding:12px 16px}
+body.mob .s.ix .k-note2 b{font-size:16px;line-height:25px}
+body.mob .s.ix .fld > span{font-size:15px;line-height:22px}
+body.mob .s.ix .fld input{font-size:16px}
