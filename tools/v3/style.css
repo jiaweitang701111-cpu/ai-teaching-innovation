@@ -1,0 +1,123 @@
+/* ── 2026-10-28 教師社群版第二輪新增（tools/v3） ── */
+.k-sub{font-size:21px;line-height:31px;color:var(--mute)}
+.k-src{margin-top:auto;font-size:13.6px;line-height:20px;color:var(--mute)}
+.cx .k-body{flex:1;min-height:0;margin-top:14px;display:flex;flex-direction:column;gap:12px}
+/* 四大角色 2×2 */
+.k-roles{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:16px}
+.k-roles .cx-card{display:flex;flex-direction:column;justify-content:center;padding:22px 28px 20px}
+.k-roles h3{font-size:30px;line-height:40px}
+.k-roles p{margin-top:8px;font-size:27.5px;line-height:40px;color:var(--ink)}
+.k-pills{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
+.k-pills span{background:#F7E6D3;color:#9A4A0B;border:1px solid #E6C29A;border-radius:999px;padding:2px 14px;font-size:16.5px;line-height:26px;font-weight:700}
+/* 第 4 頁內文加深 */
+.s[data-src="11"] .r10{color:#152031}
+/* 表格 */
+.k-tbl{width:100%;border-collapse:collapse;table-layout:fixed;color:var(--body);font-size:18px}
+.k-tbl th{background:var(--navy);color:#F5F2EC;text-align:left;font-weight:700;font-size:18px;line-height:26px;padding:9px 10px;border:1px solid var(--navy)}
+.k-tbl td{border:1px solid #D6D1C7;padding:8px 10px;font-size:inherit;line-height:27px;vertical-align:middle;background:#FCFBF8}
+.k-tbl tr:nth-child(even) td{background:#F1EDE5}
+.k-tbl td.h{font-weight:700;color:var(--navy)}
+.k-tbl td.strong{font-weight:700;color:#0B1220}
+.k-tbl small{display:block;font-size:15.5px;line-height:23px;color:var(--mute);margin-top:2px}
+.k-tbl td b{color:var(--navy)}
+.k-bul{margin:0;padding:0;list-style:none}
+.k-bul li{position:relative;padding-left:22px;font-size:19.5px;line-height:30px;color:var(--body)}
+.k-bul li::before{content:"•";position:absolute;left:4px;top:0;color:var(--orange);font-weight:700}
+/* Input-LLM-Output */
+.k-io{flex:1;min-height:0;display:flex;gap:10px;align-items:stretch}
+.k-io .cx-card{flex:1;min-width:0;display:flex;flex-direction:column;padding:18px 22px}
+.k-io .mid{flex:1.45;background:var(--navy);border:0;color:#F5F2EC}
+.k-io h3{font-size:24px;line-height:34px;padding-bottom:8px;border-bottom:4px solid var(--orange);margin-bottom:10px}
+.k-io .mid h3{color:#F5F2EC;border-color:#F0A35E}
+.k-io .mid .k-bul li{color:#E8ECF2}
+.k-io .mid .k-bul li::before{color:#F0A35E}
+.k-io .mid .k-bul li b{color:#F0A35E;font-weight:700}
+.k-io .k-bul li{font-size:20px;line-height:31px;margin-top:6px}
+.k-io .note{margin-top:8px;font-size:19px;line-height:29px;color:var(--rust);font-weight:700}
+.k-band{background:var(--sand);border:1px solid var(--orange);border-radius:10px;padding:12px 20px;font-size:19.5px;line-height:30px;color:var(--navy)}
+.k-band b{font-weight:700}
+/* 結構化 Prompt：避免卡片標題與目的框斷行 */
+.k-fit24 .cx-why p{font-size:22.5px;line-height:35px}
+.k-fit24 .cx-why .key{font-size:24px}
+.k-fit24 .cx-flow{gap:6px}
+.k-fit24 .cx-flow .cx-card{padding:16px 18px;gap:8px}
+.k-fit24 .cx-flow h3{font-size:22px;line-height:32px}
+.k-fit24 .cx-flow p{font-size:21px;line-height:33px}
+.k-fit24 .cx-flow .goal{font-size:18px;line-height:28px;padding:10px 10px}
+.k-fit24 .cx-arrow{font-size:22px}
+/* Prompt 範例卡（文案生成） */
+.k-prompt{background:var(--sand);border-left:7px solid var(--orange);border-radius:12px;padding:20px 28px}
+.k-prompt .lab{display:block;margin-bottom:8px;font-size:19px;color:#2E7D4F}
+.k-prompt .main{font-size:24px;line-height:38px;font-weight:700;color:var(--navy)}
+.k-prompt .main em{font-style:normal;color:var(--orange)}
+.k-prompt .rest{margin-top:12px;font-size:22.5px;line-height:36px;color:var(--ink)}
+.k-prompt ul{margin:12px 0 0;padding:0;list-style:none}
+.k-prompt li{position:relative;padding-left:28px;font-size:23px;line-height:38px;font-weight:700;color:var(--navy)}
+.k-prompt li::before{content:"・";position:absolute;left:0;top:0;color:var(--orange)}
+.k-explain{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 24px;font-size:21px;line-height:33px;color:var(--navy)}
+.k-explain .lab{display:block;margin-bottom:4px}
+.k-explain p + p{margin-top:6px}
+/* 廣告文案：兩步驟並排 */
+.k-steps2{flex:1;min-height:0;display:flex;gap:10px;align-items:stretch}
+.k-steps2 .cx-card{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;padding:18px 22px}
+.k-steps2 h3{font-size:22.5px;line-height:32px;color:var(--rust)}
+.k-steps2 h3 b{display:inline-block;background:var(--orange);color:#fff;border-radius:999px;padding:0 12px;margin-right:8px;font-size:17px;line-height:28px;vertical-align:2px}
+.k-steps2 .k-prompt{padding:14px 18px;border-left-width:6px}
+.k-steps2 .k-prompt .main{font-size:20.5px;line-height:33px}
+.k-steps2 .why{font-size:18.5px;line-height:29px;color:var(--body)}
+.k-steps2 .why b{color:var(--navy)}
+.k-steps2 .why + .why{margin-top:-4px}
+/* Excel 運算 3×2 */
+.k-lead{font-size:20px;line-height:30px;color:var(--navy)}
+.k-lead em{font-style:normal;font-weight:700;color:var(--orange)}
+.k-ngrid{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:36px 16px;margin-top:22px}
+.k-ncard{position:relative;background:var(--card);border:1px solid var(--line);border-top:7px solid var(--orange);border-radius:10px;padding:30px 20px 14px}
+.k-ncard .n{position:absolute;top:-28px;left:50%;margin-left:-24px;width:48px;height:48px;border-radius:50%;background:var(--orange);color:#fff;font-size:21px;font-weight:700;display:flex;align-items:center;justify-content:center;font-style:normal}
+.k-ncard p{margin:0;font-size:18.5px;line-height:29px;font-weight:700;color:var(--navy)}
+.k-ncard p + p{margin-top:8px}
+/* STEP 4–5 */
+.k-two{flex:1;min-height:0;display:grid;grid-template-columns:1.18fr 1fr;gap:16px}
+.k-two .cx-card{display:flex;flex-direction:column;gap:6px;padding:18px 24px}
+.k-two h3{font-size:23px;line-height:32px;padding-bottom:6px;border-bottom:4px solid var(--orange)}
+.k-two h3 + .k-bul{margin-top:6px}
+.k-two .k-bul + h3{margin-top:14px}
+.k-two .k-bul li{font-size:19px;line-height:29px;margin-top:5px}
+.k-two .k-bul li b{color:var(--navy)}
+.k-two .cx-navy{padding:18px 24px;display:flex;flex-direction:column;gap:8px}
+.k-two .cx-navy .lab{color:#F0A35E}
+.k-two .cx-navy .hot{font-size:19px;line-height:29px;font-weight:700;color:#F0A35E}
+.k-two .cx-navy p{font-size:19px;line-height:29px;color:#F5F2EC}
+.k-two .cx-navy .k-bul li{color:#F5F2EC;font-size:19px;line-height:29px;margin-top:4px}
+.k-two .cx-navy .k-bul li::before{content:"・";left:0;color:#F0A35E}
+/* 互動頁共用（第二輪） */
+.k-ix .pb-right .promptbox{flex:1;min-height:0;overflow:auto}
+.k-ix .pb-right .promptbox .out{font-size:19.5px;line-height:31px}
+.k-ix .pb-form{gap:7px}
+.k-ix .fld input{font-size:18px;line-height:24px;padding:4px 10px}
+.k-ix .fld > span{font-size:16.5px;line-height:23px}
+.k-ix .chips button{font-size:15.5px;line-height:22px;padding:1px 11px}
+.k-ix .row2{gap:7px 12px}
+.k-ix .pb-note1{flex:none;font-size:17.5px;line-height:27px;padding:12px 18px}
+.k-ix .pb-note1 .lab{font-size:16.5px;margin-bottom:2px}
+.k-ix .sect{font-size:16.5px;font-weight:700;color:var(--rust);letter-spacing:.5px;border-top:1px dashed #D9CDB9;padding-top:6px;margin-top:2px}
+.k-ix .sect:first-child{border-top:0;padding-top:0;margin-top:0}
+/* 應用場景探索 */
+.k-scn{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.k-scn button{border:1.5px solid #D9CDB9;background:var(--card);border-radius:10px;padding:8px 10px;text-align:left;cursor:pointer;color:var(--navy)}
+.k-scn button b{display:block;font-size:18px;line-height:26px}
+.k-scn button span{display:block;font-size:14.5px;line-height:21px;color:var(--mute);margin-top:2px}
+.k-scn button.on{background:var(--navy);border-color:var(--navy);color:#F5F2EC}
+.k-scn button.on span{color:#C7D0DC}
+.k-note2{flex:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px;font-size:16.5px;line-height:26px;color:var(--body)}
+.k-note2 b{display:block;color:var(--navy);font-size:17px}
+/* 單頁調整 */
+#ex-compete .pb-right .promptbox .out{font-size:21px!important;line-height:33px!important}
+#ex-compete .pb-right .promptbox .out.ext{font-size:20px!important;line-height:31px!important}
+#ex-compete .pb-note1{flex:none;font-size:17.5px;line-height:27px;padding:12px 18px}
+#ex-image .pb-right .promptbox .out.ext{font-size:21px!important;line-height:33px!important}
+#ex-image .pb-note1{font-size:18px;line-height:29px}
+#ex-cowork .pb-form .foot .btn{font-size:15px;padding:1px 10px;line-height:22px}
+#ex-cowork .pb-note1{font-size:18px;line-height:29px}
+#ex-survey .chips[data-multi] button{font-size:16px;line-height:24px;padding:1px 11px}
+body.mob .k-scn{grid-template-columns:1fr}
+body.mob .k-ix .pb-right .promptbox{flex:none}
